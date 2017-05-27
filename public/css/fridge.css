@@ -57,7 +57,7 @@ body{
             border-radius: 8px;
         }
 
-        #fridge_wrapper #fridge_contents select
+        #fridge_wrapper #fridge_contents select2
         {
             background-color:#f26179;
             font-size: 36pt;
