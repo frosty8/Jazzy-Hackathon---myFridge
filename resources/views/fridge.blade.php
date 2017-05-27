@@ -15,7 +15,6 @@
     <link href="{!! asset('css/reset.css') !!}" media="all" rel="stylesheet" type="text/css"/>
     <link href="{!! asset('css/fridge.css') !!}" media="all" rel="stylesheet" type="text/css"/>
 
-
 </head>
 <body>
 <div id="wrapper">
@@ -24,7 +23,7 @@
     </div>
     <div id="fridge_wrapper">
         <div id="fridge_contents">
-            <div id="meat" class="fridge_content">
+            <div id="meats" class="fridge_content">
                 <select class="select2"
                         data-placeholder="Mięso"
                         style="width: 100%;"
@@ -60,6 +59,7 @@
                         tabindex="">
                 </select>
             </div>
+
             <div id="liquids" class="fridge_content">
                 <select class="select2"
                         data-placeholder="Płyny"
@@ -69,6 +69,7 @@
                         tabindex="">
                 </select>
             </div>
+
             <div id="fruits" class="fridge_content">
                 <select class="select2"
                         data-placeholder="Owoce"
@@ -92,6 +93,7 @@
 
     $('select').select2();
 
+
     var meats = {!! $meats !!};
     var vegetables = {!! $vegetables !!};
     var fruits = {!! $fruits !!};
@@ -109,6 +111,5 @@ updateSelect('#fridge_select_04', vegetables);
 updateSelect('#fridge_select_05', fruits);
 updateSelect('#fridge_select_06', liquids);
 updateSelect('#fridge_select_07', others);
-
 
 </script>

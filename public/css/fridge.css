@@ -55,7 +55,6 @@ body{
             margin-left:auto;
             margin-right:auto;
             color:white;
-            border:8px solid #f9a5cd;
             border-radius: 8px;
             height:auto;
         }
@@ -74,32 +73,60 @@ body{
             font-size: 26pt !important;
         }
 
-        #meat .select2{
-            color:black !important;
+        .select2-search{
+            border:none !important;
+            text-align: center !important;
         }
 
-        #meat .select2-selection{
-            background-color: blue !important;
+        #fridge_select_01 + .select2 .select2-selection, #select2-fridge_select_01-results{
+            background-color: #f26179 !important;
         }
 
-        #meat .select2-results{
-            background-color: blue !important;
+        #fridge_select_02 + .select2 .select2-selection, #select2-fridge_select_02-results{
+            background-color: #35d375 !important;
         }
 
-        #meat .select2-search{
-            background-color:blue !important;
+        #fridge_select_03 + .select2 .select2-selection, #select2-fridge_select_03-results{
+            background-color: #00bfe4 !important;
         }
 
-        .select2-results{
-            background-color:blue !important;
+        #fridge_select_04 + .select2 .select2-selection, #select2-fridge_select_04-results{
+            background-color: #f2c60f !important;
         }
 
-        .select2-selection_placeholder{
-        color: white !important;
+        #fridge_select_05 + .select2 .select2-selection, #select2-fridge_select_05-results{
+            background-color: #a747c6 !important;
         }
 
+        #fridge_select_06 + .select2 .select2-selection, #select2-fridge_select_06-results{
+            background-color: #f47a00 !important;
+        }
 
+        #fridge_wrapper #fridge_contents #meats
+        {
+            border:8px solid #f9a5cd !important;
+        }
 
+        #fridge_wrapper #fridge_contents #vegetables
+        {
+            border:8px solid #7cf790 !important;
+        }
+        #fridge_wrapper #fridge_contents #fish
+        {
+            border:8px solid #5be2f4 !important;
+        }
+        #fridge_wrapper #fridge_contents #dairy
+        {
+            border:8px solid #f7e07c !important;
+        }
+        #fridge_wrapper #fridge_contents #liquids
+        {
+            border:8px solid #f792f7 !important;
+        }
+        #fridge_wrapper #fridge_contents #fruits
+        {
+            border:8px solid #f9ac95 !important;
+        }
 
 
 
