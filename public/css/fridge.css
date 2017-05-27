@@ -32,8 +32,36 @@ body{
             vertical-align:center;
         }
 
+        #other{
+            width:360px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:0px;
+            border-radius:40px;
+            background-color:white;
+        }
+        #other .select2{
+            width:300px;
+            border:none;
+        }
+
+        #fridge_select_07 + .select2 .select2-selection, #select2-fridge_select_07-results{
+            background-color: #ffffff !important;
+            color:black;
+        }
+
+        .select2-selection{
+            border:none !important;
+            height: auto !important;
+            color:white !important;
+            font-weight: 900 !important;
+            font-size: 26pt !important;
+        }
+
+
+
 #fridge_wrapper{
-    margin-top: 50px;
+    margin-top: 10px;
 }
     #fridge_wrapper #fridge_contents
     {
@@ -43,7 +71,7 @@ body{
         margin-bottom: 50px;
         background-color:white;
         -webkit-border-radius:20px;
-        padding-top:50px;
+        padding-top:25px;
         padding-bottom: 50px;
         color:white;
     }
@@ -73,6 +101,9 @@ body{
             font-size: 26pt !important;
         }
 
+
+
+
         .select2-search{
             border:none !important;
             text-align: center !important;
@@ -101,6 +132,8 @@ body{
         #fridge_select_06 + .select2 .select2-selection, #select2-fridge_select_06-results{
             background-color: #f47a00 !important;
         }
+
+
 
         #fridge_wrapper #fridge_contents #meats
         {

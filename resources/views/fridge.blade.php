@@ -21,6 +21,17 @@
     <div id="headline">
         <h1> Wybierz produkty, które masz w lodówce </h1>
     </div>
+
+    <div id="other">
+        <select class="select2"
+                data-placeholder="Inne"
+                id="fridge_select_07"
+                name="fridge_select_07"
+                tabindex="">
+        </select>
+    </div>
+
+
     <div id="fridge_wrapper">
         <div id="fridge_contents">
             <div id="meats" class="fridge_content">
