@@ -109,7 +109,7 @@ body{
             text-align: center !important;
         }
 
-        #fridge_select_01 + .select2 .select2-selection, #select2-fridge_select_01-results{
+        #fridge_select_00 + .select2 .select2-selection, #select2-fridge_select_00-results{
             background-color: #f26179 !important;
         }
 
