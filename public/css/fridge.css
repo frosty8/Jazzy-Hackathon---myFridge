@@ -45,27 +45,61 @@ body{
         -webkit-border-radius:20px;
         padding-top:50px;
         padding-bottom: 50px;
-
+        color:white;
     }
+
         #fridge_wrapper #fridge_contents .fridge_content
         {
             width:600px;
             margin-bottom:30px;
             margin-left:auto;
             margin-right:auto;
+            color:white;
             border:8px solid #f9a5cd;
             border-radius: 8px;
+            height:auto;
         }
 
-        #fridge_wrapper #fridge_contents select2
-        {
-            background-color:#f26179;
-            font-size: 36pt;
-            font-weight: 900;
-            text-align: center;
-            color: white;
-            height:110px;
-            border: none;
+        .select2-results {
+            color:white !important;
+            font-family: "Nunito", sans-serif !important;
+            font-weight:900 !important;
         }
+
+        .select2-selection{
+            height: auto !important;
+            border-radius:0px !important;
+            color:white !important;
+            font-weight: 900 !important;
+            font-size: 26pt !important;
+        }
+
+        #meat .select2{
+            color:black !important;
+        }
+
+        #meat .select2-selection{
+            background-color: blue !important;
+        }
+
+        #meat .select2-results{
+            background-color: blue !important;
+        }
+
+        #meat .select2-search{
+            background-color:blue !important;
+        }
+
+        .select2-results{
+            background-color:blue !important;
+        }
+
+        .select2-selection_placeholder{
+        color: white !important;
+        }
+
+
+
+
 
 
