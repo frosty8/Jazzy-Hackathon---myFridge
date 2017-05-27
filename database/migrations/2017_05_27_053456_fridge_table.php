@@ -16,21 +16,20 @@ class FridgeTable extends Migration
         Schema::create('fridge', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('element1');
-            $table->integer('element2');
-            $table->integer('element3');
-            $table->integer('element4');
-            $table->integer('element5');
-            $table->integer('element6');
-            $table->integer('element7');
-            $table->integer('element8');
-            $table->integer('element9');
-            $table->integer('element10');
-            $table->integer('element11');
-            $table->integer('element12');
-            $table->integer('element13');
-            $table->integer('element14');
-            $table->integer('element15');
-            $table->timestamps();
+            $table->integer('element2')->nullable();
+            $table->integer('element3')->nullable();
+            $table->integer('element4')->nullable();
+            $table->integer('element5')->nullable();
+            $table->integer('element6')->nullable();
+            $table->integer('element7')->nullable();
+            $table->integer('element8')->nullable();
+            $table->integer('element9')->nullable();
+            $table->integer('element10')->nullable();
+            $table->integer('element11')->nullable();
+            $table->integer('element12')->nullable();
+            $table->integer('element13')->nullable();
+            $table->integer('element14')->nullable();
+            $table->integer('element15')->nullable();
         });
     }
 

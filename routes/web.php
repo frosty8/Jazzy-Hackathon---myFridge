@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
+Route::get('/fridge', function (){
+    $products = DB::table('product_table')->get();
+
+    return view('fridge', compact($products));
+});
+Route::get('/prepares', function (){
+
+    return view('prepare');
+});
+Route::get('/recipe', function (){
+
+    return view('recipe');
+});
+
