@@ -39,21 +39,32 @@ body{
     {
         margin-left: auto;
         margin-right: auto;
-        width:300px;
+        width:800px;
         margin-bottom: 50px;
+        background-color:white;
+        -webkit-border-radius:20px;
+        padding-top:50px;
+        padding-bottom: 50px;
+
     }
         #fridge_wrapper #fridge_contents .fridge_content
         {
+            width:600px;
             margin-bottom:30px;
+            margin-left:auto;
+            margin-right:auto;
+            border:8px solid #f9a5cd;
+            border-radius: 8px;
         }
 
         #fridge_wrapper #fridge_contents select
         {
-            background-color:red;
-            color: black;
-            height: 50px;
-            -webkit-border-radius: 15px;
-            -moz-border-radius:5px
+            background-color:#f26179;
+            font-size: 36pt;
+            font-weight: 900;
+            color: white;
+            height:110px;
+            border: none;
         }
 
 
