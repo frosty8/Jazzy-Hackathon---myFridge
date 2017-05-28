@@ -16,9 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/fridge', function (){
-    $products = DB::table('product_table')->get();
-    $meats = DB::table('product_table')->get()->where('cat_id', 1);
-    $vegetables = DB::table('product_table')->get()->where('cat_id', 2);
+    $products = App\Product_table::all();
+    $meats = App\Product_table::where('cat_id', 1);
+    $vegetables = App\Product_table::where('cat_id', 2);
     $fruits = DB::table('product_table')->get()->where('cat_id', 5);
     $fishs = DB::table('product_table')->get()->where('cat_id', 3);
     $dairy = DB::table('product_table')->get()->where('cat_id', 4);
@@ -34,5 +34,10 @@ Route::get('/prepares', function (){
 Route::get('/recipe', function (){
 
     return view('recipe');
+});
+
+Route::post('/posts', function (){
+    echo dd(request()->all());
+
 });
 
