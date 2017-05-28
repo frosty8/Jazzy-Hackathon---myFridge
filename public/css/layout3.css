@@ -1,0 +1,133 @@
+body{
+    background-color: #00bfe4 ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+a, a:focus, a:hover{
+    text-decoration: none;
+
+}
+.myWrapper{
+    width: 100%;
+}
+.myContainer{
+    width: 80%;
+    margin: auto;
+}
+.info{
+    background-color: #ffffff ;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+.info:hover{
+    background-color: #efffef ;
+}
+.mySection{
+    background-color: #ffffff ;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.mySection-lg{
+    background-color: #ffffff ;
+    border: solid 4px #00dff6 ;
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 10px;
+    top: 40px;
+}
+.mySection-separate{
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff ;
+}
+.shape{
+    border-radius: 20px;
+}
+.cell{
+    height: 300px;
+}
+.cellxS{
+    width: 400px;
+    height: 150px;
+    font-weight: bold;
+}
+.cellxxS{
+    height: 100px;
+    font-weight: bold;
+
+}
+.cell-special{
+    width: auto;
+    height: auto;
+}
+.cellSection-lg{
+    width: inherit;
+}
+.photo{
+    width: 200px;
+    height: 220px;
+
+}
+.myTable{
+    width: inherit;
+    height: auto;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+}
+.myButton-recipe{
+    width: inherit;
+    height: 100px;
+    border: solid 1px #ababab ;
+    border-radius: 20px;
+    line-height: 80px;
+    font-size: 150%;
+    text-align: center;
+}
+.myButton-back{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 150px;
+    text-align: center;
+    background-color: #00bfe4 ;
+    border: solid 2px #00dff6
+}
+.myButton-back:hover{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 150px;
+    text-align: center;
+    background-color: #00aed3 ;
+    border: solid 2px #00acc3
+}
+
+.link-regular, .link-regular:hover, .link-regular:visited{
+    color: #ffffff ;
+    text-decoration: none;
+    display: block;
+}
+
+.link-info-success, .link-info-success:hover, .link-info-success:visited {
+    text-decoration: none;
+    display: block;
+    color:green;
+
+}
+.link-info-warning, .link-info-warning:hover, .link-info-warning:visited{
+    text-decoration: none;
+    display: block;
+    color: #ee7b00 ;
+}
+
+.info-text{
+    text-align: center;
+    font-weight: bold;
+    line-height: 100px;
+}
+.text-title{
+    color: #00bfe4 ;
+    font-weight: bold;
+}

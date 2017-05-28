@@ -1,9 +1,7 @@
 <!doctype HTML>
 <html>
 <head>
-
     <title>My fridge</title>
-
     <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('js/documentReady.js') !!}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,9 +15,10 @@
     <link href="{!! asset('css/reset.css') !!}" media="all" rel="stylesheet" type="text/css"/>
     <link href="{!! asset('css/fridge.css') !!}" media="all" rel="stylesheet" type="text/css"/>
 
-
 </head>
 <body>
+<form id="fridgeForm" method="POST" action="/posts">
+    {{csrf_field()}}
 <div id="wrapper">
     <div id="headline">
         <h1> Wybierz produkty, które masz w lodówce </h1>
@@ -29,57 +28,64 @@
         <select class="select2"
                 data-placeholder="Inne"
                 id="fridge_select_07"
-                name="fridge_select_07"
-                tabindex="">
+                name="fridge_select_07[]"
+                tabindex=""
+        multiple>
         </select>
     </div>
 
-    <div id="fridge_wrapper">
-        <div id="fridge_contents">
-            <div id="meats" class="fridge_content" style="color:white !important;">
-                <select class="select2"
-                        data-placeholder="Mięso"
-                        style="width: 100%;"
-                        id="fridge_select_01"
-                        name="fridge_select_01"
-                        tabindex="">
-                </select>
-            </div>
-            <div id="vegetables" class="fridge_content">
-                <select class="select2"
-                        data-placeholder="Warzywa"
-                        style="width: 100%"
-                        id="fridge_select_02"
-                        name="fridge_select_02"
-                        tabindex="">
-                </select>
-            </div>
-            <div id="fish" class="fridge_content">
-                <select class="select2"
-                        data-placeholder="Ryby"
-                        style="width: 100%"
-                        id="fridge_select_03"
-                        name="fridge_select_03"
-                        tabindex="">
-                </select>
-            </div>
-            <div id="dairy" class="fridge_content">
-                <select class="select2"
-                        data-placeholder="Nabiał"
-                        style="width: 100%"
-                        id="fridge_select_04"
-                        name="fridge_select_04"
-                        tabindex="">
-                </select>
-            </div>
+
+        <div id="fridge_wrapper">
+            <div id="fridge_contents">
+                <div id="meats" class="fridge_content">
+                    <select class="select2"
+                            data-placeholder="Mięso"
+                            style="width: 100%;"
+                            id="fridge_select_00"
+                            name="fridge_select_00[]"
+                            tabindex=""
+                    multiple>
+                    </select>
+                </div>
+                <div id="vegetables" class="fridge_content">
+                    <select class="select2"
+                            data-placeholder="Warzywa"
+                            style="width: 100%"
+                            id="fridge_select_02"
+                            name="fridge_select_02[]"
+                            tabindex=""
+                    multiple>
+                    </select>
+                </div>
+                <div id="fish" class="fridge_content">
+                    <select class="select2"
+                            data-placeholder="Ryby"
+                            style="width: 100%"
+                            id="fridge_select_03"
+                            name="fridge_select_03[]"
+                            tabindex=""
+                    multiple>
+                    </select>
+                </div>
+                <div id="dairy" class="fridge_content">
+                    <select class="select2"
+                            data-placeholder="Nabiał"
+                            style="width: 100%"
+                            id="fridge_select_04"
+                            name="fridge_select_04[]"
+                            tabindex=""
+                    multiple>
+                    </select>
+                </div>
 
             <div id="liquids" class="fridge_content">
                 <select class="select2"
                         data-placeholder="Płyny"
                         style="width: 100%"
                         id="fridge_select_05"
-                        name="fridge_select_05"
-                        tabindex="">
+                        name="fridge_select_05[]]"
+                        tabindex=""
+                multiple>
                 </select>
             </div>
 
@@ -88,27 +94,26 @@
                         data-placeholder="Owoce"
                         style="width: 100%"
                         id="fridge_select_06"
-                        name="fridge_select_06"
-                        tabindex="">
+                        name="fridge_select_06[]"
+                        tabindex=""
+                multiple>
                 </select>
             </div>
 
+            </div>
         </div>
 
         <div id="search">
-            <button>S Z U K A J</button>
+            <button type="submit">S Z U K A J</button>
         </div>
-    </div>
-
 </div>
+</form>
 </body>
 </html>
 
 <script>
 
-    $(document).ready(function() {
-        $('select').select2();
-    });
+    $('select').select2();
 
 
     var meats = {!! $meats !!};
@@ -120,13 +125,12 @@
     var others = {!! $others !!};
 
 
-
-updateSelect('#fridge_select_01', meats);
-updateSelect('#fridge_select_02', fishs);
-updateSelect('#fridge_select_03', dairy);
-updateSelect('#fridge_select_04', vegetables);
-updateSelect('#fridge_select_05', fruits);
-updateSelect('#fridge_select_06', liquids);
-updateSelect('#fridge_select_07', others);
+    updateSelect('#fridge_select_00', meats);
+    updateSelect('#fridge_select_02', vegetables);
+    updateSelect('#fridge_select_03', fishs);
+    updateSelect('#fridge_select_04', dairy);
+    updateSelect('#fridge_select_06', fruits);
+    updateSelect('#fridge_select_05', liquids);
+    updateSelect('#fridge_select_07', others);
 
 </script>
