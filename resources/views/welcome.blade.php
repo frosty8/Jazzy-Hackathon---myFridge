@@ -32,15 +32,18 @@
         <h1>Trzy proste kroki!</h1>
 
         <div class="step">
-            <h2>1</h2>
+            <img src="{!! asset('icons/carrot-32.png') !!}"/>
+            <!-- <h2>1</h2> -->
             <p>Wybierz składniki jakie masz w lodówce</p>
         </div>
         <div class="step">
-            <h2>2</h2>
+            <!--<h2>2</h2>-->
+            <img src="{!! asset('icons/paper-32.png') !!}"/>
             <p>Wybierz przepis jaki Ci odpowiada</p>
         </div>
         <div class="step">
-            <h2>3</h2>
+            <!--<h2>3</h2>-->
+            <img src="{!! asset('icons/cook-32.png') !!}"/>
             <p>Gotuj!</p>
         </div>
         <div style="clear:both;"></div>

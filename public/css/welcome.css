@@ -41,11 +41,9 @@ body{
         }
 
     #wrapper #steps {
-        margin-top: 80px;
+        margin: 80px auto 30px auto;
         text-align: center;
         color: white;
-        margin-left:auto;
-        margin-right: auto;
     }
 
         #wrapper #steps h1{
@@ -61,10 +59,11 @@ body{
 
         #wrapper #steps .step h2{
             font-size: 28pt;
-            margin-bottom: 6px;
         }
 
+
         #wrapper #steps .step p{
+            margin-top: 15px;
             font-size: 14pt;
         }
 
