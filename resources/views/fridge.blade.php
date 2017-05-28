@@ -1,7 +1,9 @@
 <!doctype HTML>
 <html>
 <head>
+
     <title>My fridge</title>
+
     <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('js/documentReady.js') !!}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,6 +16,7 @@
 
     <link href="{!! asset('css/reset.css') !!}" media="all" rel="stylesheet" type="text/css"/>
     <link href="{!! asset('css/fridge.css') !!}" media="all" rel="stylesheet" type="text/css"/>
+
 
 </head>
 <body>
@@ -31,10 +34,9 @@
         </select>
     </div>
 
-
     <div id="fridge_wrapper">
         <div id="fridge_contents">
-            <div id="meats" class="fridge_content">
+            <div id="meats" class="fridge_content" style="color:white !important;">
                 <select class="select2"
                         data-placeholder="Mięso"
                         style="width: 100%;"
@@ -92,17 +94,21 @@
             </div>
 
         </div>
+
+        <div id="search">
+            <button>S Z U K A J</button>
+        </div>
     </div>
-    <div id="search">
-        <button>S Z U K A J</button>
-    </div>
+
 </div>
 </body>
 </html>
 
 <script>
 
-    $('select').select2();
+    $(document).ready(function() {
+        $('select').select2();
+    });
 
 
     var meats = {!! $meats !!};

@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link href="{!! asset('css/reset.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{!! asset('css/960.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{!! asset('css/text.css') !!}" media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/welcome.css') !!}" media="all" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,20 +18,35 @@
 
 <div id="wrapper">
     <div id="title">
-
-        <h1>My Fridge</h1>
-
-        <div id="quote">
-            <p>"Powiedz mi co masz w lodówce, a powiem Ci co zjesz!"</p>
-        </div>
-
-        <div id="fridge">
-            <button type="button" class="btn btn-primary">Next</button>
-        </div>
-
-        <div class="float_clear"></div>
-
     </div>
+
+    <div id="quote">
+        <h1>Pokaż mi co masz w lodówce, a powiem Ci co zjesz :)</h1>
+    </div>
+
+    <div id="button">
+        <a href="/fridge"><button>S T A R T</button></a>
+    </div>
+
+    <div id="steps">
+        <h1>Trzy proste kroki!</h1>
+
+        <div class="step">
+            <h2>1</h2>
+            <p>Wybierz składniki jakie masz w lodówce</p>
+        </div>
+        <div class="step">
+            <h2>2</h2>
+            <p>Wybierz przepis jaki Ci odpowiada</p>
+        </div>
+        <div class="step">
+            <h2>3</h2>
+            <p>Gotuj!</p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+
 </div>
 </body>
 </html>

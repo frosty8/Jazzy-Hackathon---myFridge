@@ -2,77 +2,64 @@ body{
     background-color: #00bfe4;
 }
 
+#headline
+{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight: 900;
+}
 
 #wrapper{
     width:900px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    margin: 50px auto 50px auto;
     text-align: center;
     color:white;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
 }
 
-    #wrapper #search{
-        font-weight:bolder;
-        font-size: 25px;
-        color: #00bfe4;
-    }
-        #wrapper #search button{
-            background-color: white;
-            border: none;
-            border-radius:10px;
-            padding: 3px 30px;
-            font-weight: 900;
-        }
 
-        #wrapper #search button:hover{
-            background-color: #dddddd;
-            vertical-align:center;
-        }
 
-        #other{
-            width:360px;
-            margin-left:auto;
-            margin-right:auto;
-            margin-bottom:0px;
-            border-radius:40px;
-            background-color:white;
-        }
+#other{
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    border-radius:40px;
+    background-color:white;
+    color:black;
+}
+
+#other ::-webkit-input-placeholder{
+    color:black;
+    text-align:center;
+}
+
         #other .select2{
-            width:300px;
+            width:500px;
             border:none;
         }
 
-        #fridge_select_07 + .select2 .select2-selection, #select2-fridge_select_07-results{
-            background-color: #ffffff !important;
-            color:black;
-        }
-
-        .select2-selection{
-            border:none !important;
-            height: auto !important;
-            color:white !important;
-            font-weight: 900 !important;
-            font-size: 26pt !important;
-        }
+            #other #fridge_select_07 + .select2 .select2-selection, #select2-fridge_select_07-results{
+                background-color: #ffffff !important;
+                color:black !important;
+            }
 
 
 
 #fridge_wrapper{
-    margin-top: 10px;
+    margin-top: 20px;
 }
     #fridge_wrapper #fridge_contents
     {
         margin-left: auto;
         margin-right: auto;
         width:640px;
-        margin-bottom: 50px;
         background-color:white;
         -webkit-border-radius:20px;
+        margin-bottom: 50px;
         padding-top:25px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         color:white;
     }
 
@@ -87,53 +74,10 @@ body{
             height:auto;
         }
 
-        .select2-results {
-            color:white !important;
-            font-family: "Nunito", sans-serif !important;
-            font-weight:900 !important;
+        #fridge_wrapper #fridge_contents ::-webkit-input-placeholder{
+            color:white;
+            text-align:center;
         }
-
-        .select2-selection{
-            height: auto !important;
-            border-radius:0px !important;
-            color:white !important;
-            font-weight: 900 !important;
-            font-size: 26pt !important;
-        }
-
-
-
-
-        .select2-search{
-            border:none !important;
-            text-align: center !important;
-        }
-
-        #fridge_select_01 + .select2 .select2-selection, #select2-fridge_select_01-results{
-            background-color: #f26179 !important;
-        }
-
-        #fridge_select_02 + .select2 .select2-selection, #select2-fridge_select_02-results{
-            background-color: #35d375 !important;
-        }
-
-        #fridge_select_03 + .select2 .select2-selection, #select2-fridge_select_03-results{
-            background-color: #00bfe4 !important;
-        }
-
-        #fridge_select_04 + .select2 .select2-selection, #select2-fridge_select_04-results{
-            background-color: #f2c60f !important;
-        }
-
-        #fridge_select_05 + .select2 .select2-selection, #select2-fridge_select_05-results{
-            background-color: #a747c6 !important;
-        }
-
-        #fridge_select_06 + .select2 .select2-selection, #select2-fridge_select_06-results{
-            background-color: #f47a00 !important;
-        }
-
-
 
         #fridge_wrapper #fridge_contents #meats
         {
@@ -161,5 +105,73 @@ body{
             border:8px solid #f9ac95 !important;
         }
 
+        #fridge_select_01 + .select2 .select2-selection, #select2-fridge_select_01-results{
+            background-color: #f26179 !important;
+            color:white !important;
+        }
 
+        #fridge_select_02 + .select2 .select2-selection, #select2-fridge_select_02-results{
+            background-color: #35d375 !important;
+            color:white !important;
+        }
+
+        #fridge_select_03 + .select2 .select2-selection, #select2-fridge_select_03-results{
+            background-color: #00bfe4 !important;
+            color:white !important;
+        }
+
+        #fridge_select_04 + .select2 .select2-selection, #select2-fridge_select_04-results{
+            background-color: #f2c60f !important;
+            color:white !important;
+        }
+
+        #fridge_select_05 + .select2 .select2-selection, #select2-fridge_select_05-results{
+            background-color: #a747c6 !important;
+            color:white !important;
+        }
+
+        #fridge_select_06 + .select2 .select2-selection, #select2-fridge_select_06-results{
+            background-color: #f47a00 !important;
+            color:white !important;
+        }
+
+.select2-results {
+    color:white !important;
+    font-family: "Nunito", sans-serif !important;
+    font-weight:900 !important;
+}
+
+.select2-selection{
+    height: auto !important;
+    border:none !important;
+    border-radius:0px !important;
+    font-weight: 900 !important;
+    font-size: 26pt !important;
+}
+
+.select2-search{
+    border:none !important;
+}
+
+.select2-chosen{
+    color:#fff !important;
+}
+
+#search{
+    font-weight:bolder;
+    font-size: 40px;
+    color: #00bfe4;
+}
+    #search button{
+        background-color: white;
+        border: none;
+        border-radius:10px;
+        padding: 3px 30px;
+        font-weight: 900;
+    }
+
+    #search button:hover{
+        background-color: #dddddd;
+        vertical-align:center;
+    }
 
