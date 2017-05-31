@@ -10,10 +10,11 @@
 <div class="myWrapper">
 
     {{--<div class="mySection-separate"></div>--}}
-    <div class="myContainer">
-        <button class="myButton-back bt btn-primary btn-lg btn-default"><a href="/fridge"> < wróć </a>
+    <div class="myContainer"><a href="/fridge">
+        <button class="myButton-back bt btn-primary btn-lg btn-default"> < wróć
 
         </button>
+            </a>
         <!------------------------------------------- WSZYSTKIE SKŁADNIKI ------------------------------------------------------------>
         <div class="shape info">
             <table>
